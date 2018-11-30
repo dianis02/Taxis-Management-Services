@@ -148,7 +148,7 @@ Tendremos las siguientes relaciones resultantes:
 \end{itemize}
 
 \item Chofer\\
-Sea Chofer(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,delegación,colonia,calle,lote,celular,num\_viajes).\\
+Sea Chofer(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia\\,delegación,colonia,calle,lote,celular,num\_viajes).\\
 Para facilitar la normalización renombraremos los atributos como sigue:
 licencia = A,nombre = B,paterno = C,materno = D,correo\_electronico = E,fecha\_ingreso = F,fotografia = G,delegación = H,colonia = I,calle = J,lote = K,celular = L,num\_viajes = M\\
 Sea Chofer(A,B,C,D,E,F,G,H,I,J,K,L,M) con las dependencias funcionales 
@@ -187,7 +187,7 @@ Sea H $\rightarrow$ IJK
 Sea Fmin = \{A $\rightarrow$ BCDEFGLM, H $\rightarrow$ IJK  \}\\
 Tendremos las siguientes relaciones resultantes:
 \begin{itemize}
-\item Chofer(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,celular,num\_viajes)
+\item Chofer(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,\\ celular,num\_viajes)
 \item Dirección(delegación,colonia,calle,lote)
 \end{itemize}
 
@@ -207,7 +207,7 @@ Tendremos las siguientes relaciones resultantes:
 
 
 \item Dueño\\
-Sea Dueño(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,delegación,colonia,calle,lote,celular,num\_viajes,rfc).\\
+Sea Dueño(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,\\ delegación,colonia,calle,lote,celular,num\_viajes,rfc).\\
 Para facilitar la normalización renombraremos los atributos como sigue:
 licencia = N,nombre = B,paterno = C,materno = D,correo\_electronico = E,fecha\_ingreso = F,fotografia = G,delegación = H,colonia = I,calle = J,lote = K,celular = L,num\_viajes = M, rfc = A\\
 Sea Dueño(A,B,C,D,E,F,G,H,I,J,K,L,M,N) con las dependencias funcionales 
@@ -248,7 +248,7 @@ Sea H $\rightarrow$ IJK
 Sea Fmin = \{A $\rightarrow$ BCDEFGLMN, H $\rightarrow$ IJK  \}\\
 Tendremos las siguientes relaciones resultantes:
 \begin{itemize}
-\item Dueño(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,celular,num\_viajes,rfc)
+\item Dueño(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso, \\ fotografia,celular,num\_viajes,rfc)
 \item Dirección(delegación,colonia,calle,lote)
 \end{itemize}
 
@@ -260,8 +260,13 @@ Para facilitar la normalización renombraremos los atributos como sigue:
 número\_económico = A,año,modelo = B,marca,cilindros = C,descripción\_baja = D,activo = E
 ,num\_puertas = F, num\_pasajeros = G, transmición = H,llanta\_refacción = I,combustible = J,fecha\_baja = K
 Sea Vehículo(A,B,C,D,E,F,G,H,I,J,K) con las dependencias funcionales
-Vehículo(A $\rightarrow$ ) \\
+Vehículo(A $\rightarrow$ BCDEFGHIJK) \\
 \\
+Tenemos una única dependencia funcional trivial, ya esta normalizada.
+Tendremos las siguientes relaciones resultantes:
+\begin{itemize}
+\item Vehículo(A $\rightarrow$ BCDEFGHIJK) \\
+\end{itemize}
 
 
 
@@ -270,7 +275,7 @@ Sea Aseguradora(rfc,nombre)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
 rfc = A y nombre = B.\\
 Sea Aseguradora(A,B) con las dependencias funcionales 
-Dueño = \{A $\rightarrow$ B\} \\
+Aseguradora = \{A $\rightarrow$ B\} \\
 \\
 Tenemos una única dependencia funcional trivial, ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
@@ -286,6 +291,12 @@ dueño\_rfc = A,aseguradora\_rfc = B, vehiculo\_numero\_económico = C, num\_seg
 Sea Asegurar(A,B,C,D,E) con las dependencias funcionales 
 Asegurar = \{ABC $\rightarrow$ DE\} \\
 \\
+Tenemos una única dependencia funcional, entonce no hay otr manera 
+de alcanzar los atributos, es decir ya esta normalizada.
+Tendremos las siguientes relaciones resultantes:
+\begin{itemize}
+\item Asegurar = \{ABC $\rightarrow$ DE\} \\
+\end{itemize}
 
 
 \item Viaje\\
@@ -293,8 +304,14 @@ Sea Viaje(id\_viaje,fecha,tiempo,distancia,personas)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
 id\_viaje = A,fecha = B,tiempo = C,distancia = D,personas = E.\\
 Sea Viaje(A,B,C,D,E) con las dependencias funcionales
-Asegurar = \{A $\rightarrow$ BCDE\} \\
+Viaje = \{A $\rightarrow$ BCDE\} \\
 \\
+Tenemos una única dependencia funcional, entonce no hay otr manera 
+de alcanzar los atributos, es decir ya esta normalizada.
+Tendremos las siguientes relaciones resultantes:
+\begin{itemize}
+\item Viaje = \{A $\rightarrow$ BCDE\} \\
+\end{itemize}
 
 
 
@@ -302,8 +319,8 @@ Asegurar = \{A $\rightarrow$ BCDE\} \\
 Sea Destino(id\_viaje,destino)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
 id\_viaje = A y destino = B.\\
-Sea Viaje(A,B) con las dependencias funcionales
-Viaje = \{A $\twoheadrightarrow$ B\} \\
+Sea Destino(A,B) con las dependencias funcionales
+Destino = \{A $\twoheadrightarrow$ B\} \\
 \\
 Tenemos una única dependencia funcional trivial, ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
@@ -315,8 +332,8 @@ Tendremos las siguientes relaciones resultantes:
 Sea Origen(id\_viaje,origen)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
 id\_viaje = A y origen = B.\\
-Sea Viaje(A,B) con las dependencias funcionales
-Viaje = \{A $\twoheadrightarrow$ B\} \\
+Sea Origen(A,B) con las dependencias funcionales
+Origen = \{A $\twoheadrightarrow$ B\} \\
 \\
 Tenemos una única dependencia funcional trivial, ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
@@ -325,19 +342,52 @@ Tendremos las siguientes relaciones resultantes:
 \end{itemize}
 
 \item Cliente\\
-Sea Cliente(id_cliente,nombre,paterno,materno,correo\_electronico,delegación,colonia,calle,lote,telefono,num\_viajes,ubicación\_cu)\\
+Sea Cliente(id\_cliente,nombre,paterno,materno,correo\_electronico,delegación,colonia,calle,  \\ lote,telefono,num\_viajes,ubicación\_cu)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
-id_cliente = A,nombre = B,paterno = C,materno = D,correo\_electronico = E,delegación = F,colonia = G,calle = H,lote = I,telefono = J,num\_viajes = K,ubicación\_cu = L.\\
+id\_cliente = A,nombre = B,paterno = C,materno = D,correo\_electronico = E,delegación = F,colonia = G,calle = H,lote = I,telefono = J,num\_viajes = K,ubicación\_cu = L.\\
 Sea Cliente(A,B,C,D,E,F,G,H,I,J,K,L) con las dependencias funcionales
 Cliente = \{A $\rightarrow$ BCDEKL, F $\rightarrow$ GHI  \} \\
 \\
+Buscamos atributos superfluos iquierdos:\\
+No tenemos dependencias para buscar elementos superfluos izquierdos.\\
+Buscamos atributos superfluos derechos:\\
+\\
+Sea A $\rightarrow$  BCDEKL\\
+¿C es superfluo? $\Rightarrow$ A $\rightarrow$ BDEKL \\
+\{A\}+= \{A,B,D,E,K,L\} No aparece C, entonces no es superfluo.\\
+¿B es superfluo? $\Rightarrow$ A $\rightarrow$ CDEKL \\
+\{A\}+= \{A,C,D,E,K,L\} No aparece B, entonces no es superfluo.\\
+¿D es superfluo? $\Rightarrow$ A $\rightarrow$ BCEKL \\
+\{A\}+= \{A,B,C,E,K,L\}  No aparece D, entonces no es superfluo.\\
+¿E es superfluo? $\Rightarrow$ A $\rightarrow$ BCDKL \\
+\{A\}+= \{A,B,C,D,K,L\}  No aparece E, entonces no es superfluo.\\
+¿K es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEL \\
+\{A\}+= \{A,B,C,D,E,L\}  No aparece K, entonces no es superfluo.\\
+¿L es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEK \\
+\{A\}+= \{A,B,C,D,E,K\}  No aparece L, entonces no es superfluo.\\
+\\
+Sea  F $\rightarrow$ GHI 
+¿G es superfluo? $\Rightarrow$ F $\rightarrow$ HI \\
+\{F\}+= \{F,H,I\} No aparece G, entonces no es superfluo.\\
+¿H es superfluo? $\Rightarrow$ F $\rightarrow$ GI \\
+\{F\}+= \{F,G,I\} No aparece H, entonces no es superfluo.\\
+¿I es superfluo? $\Rightarrow$ F $\rightarrow$ GH \\
+\{F\}+= \{F,G,H\} No aparece I, entonces no es superfluo.\\
+\\
+Sea Fmin = \{A $\rightarrow$ BCDEKL, F $\rightarrow$ GHI  \} \\
+Tendremos las siguientes relaciones resultantes:
+\begin{itemize}
+\item Cliente(id\_cliente,nombre,paterno,materno,correo\_electronico,telefono,num\_viajes,ubicación\_cu)
+\item Dirección(delegación,colonia,calle,lote)
+\end{itemize}
+
 
 \item Rol\\
 Sea Rol(cliente\_id, rol)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
 cliente\_id = A y rol = B.\\
-Sea Viaje(A,B) con las dependencias funcionales
-Viaje = \{A $\twoheadrightarrow$ B\} \\
+Sea Rol(A,B) con las dependencias funcionales
+Rol = \{A $\twoheadrightarrow$ B\} \\
 \\
 Tenemos una única dependencia funcional trivial, ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
@@ -352,6 +402,12 @@ id\_viaje = A,id\_cliente = B,licencia = C,vehiculo\_numero\_economico = D.\\
 Sea Transportar(A,B,C,D) con las dependencias funcionales
 Transportar = \{ABCD $\rightarrow$ ABCD \} \\
 \\
+Tenemos una única dependencia funcional con todos los atributos. Tenemos
+una dependencia tricial, entonces ya esta normalizada, nos quedamos con la
+misma relación.
+\begin{itemize}
+\item Sea Transportar(id\_viaje,id\_cliente,licencia,vehiculo\_numero\_economico) \\
+\end{itemize}
 
 
 \end{itemize}

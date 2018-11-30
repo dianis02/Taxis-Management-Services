@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  28 NOV 2018 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  29 NOV 2018 20:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -763,12 +763,12 @@ s been already used, duplicate ignored
 l.97 E
       n esta Ãºltima versiÃ³n del diagrama , cambiamos la relaciÃ³n transpor...
  <./img/R_boceto2.jpeg> <./img/R_boceto3.jpeg>]
-<./img/relacional.jpg, id=49, 1469.49pt x 935.495pt>
+<./img/relacional.jpg, id=49, 1461.46pt x 1072.005pt>
 File: ./img/relacional.jpg Graphic file (type jpg)
 
 <use ./img/relacional.jpg>
 Package pdftex.def Info: ./img/relacional.jpg used on input line 109.
-(pdftex.def)             Requested size: 361.34999pt x 230.03333pt.
+(pdftex.def)             Requested size: 361.34999pt x 265.05624pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
@@ -794,55 +794,22 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 123.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 119--143
+Underfull \hbox (badness 10000) in paragraph at lines 119--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--143
+Underfull \hbox (badness 10000) in paragraph at lines 119--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--143
+Underfull \hbox (badness 10000) in paragraph at lines 119--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--143
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 144.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
-
-Overfull \hbox (169.44281pt too wide) in paragraph at lines 148--185
-\T1/cmr/m/n/10 Sea Cho-fer(licencia,nombre,paterno,materno,correo_electronico,f
-echa_ingreso,fotografia,delegación,colonia,calle,lote,celular,num_viajes). 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--185
+Underfull \hbox (badness 10000) in paragraph at lines 119--145
 
  []
 
@@ -851,161 +818,279 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.185 \begin{itemize}
+l.145 \begin{itemize}
                       <./img/relacional.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 150--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 150--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 150--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 194--204
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 209--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 209--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 209--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 209--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
+Overfull \hbox (9.12085pt too wide) in paragraph at lines 256--267
+\T1/cmr/m/n/10 Sea Vehícu-lo(número_económico,año,modelo,marca,cilindros,descri
+pción_baja,activo ,num_puertas,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 256--267
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
+
+ []
+
+
+Overfull \hbox (17.03891pt too wide) in paragraph at lines 287--297
+\T1/cmr/m/n/10 Para fa-ci-li-tar la nor-ma-li-za-ción re-nom-bra-re-mos los atr
+i-bu-tos co-mo si-gue: due-ño_rfc = A,aseguradora_rfc
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--340
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--379
+
+ []
+
+
+Overfull \hbox (22.15082pt too wide) in paragraph at lines 380--381
+[]\T1/cmr/m/n/10 Cliente(id_cliente,nombre,paterno,materno,correo_electronico,t
+elefono,num_viajes,ubicación_cu) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--408
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
  (./reporte.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
 Package rerunfilecheck Info: File `reporte.out' has not changed.
 (rerunfilecheck)             Checksum: 3EF9C069070DE449D6CF33A61A022310;198.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
- 7358 strings out of 493029
- 101615 string characters out of 6136233
+ 7361 strings out of 493029
+ 101633 string characters out of 6136233
  195309 words of memory out of 5000000
  10777 multiletter control sequences out of 15000+600000
  7645 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,30p,275b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,7n,30p,275b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfrm1000.pfb>
-Output written on reporte.pdf (8 pages, 1406277 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm1000.pfb>
+Output written on reporte.pdf (11 pages, 1414900 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
