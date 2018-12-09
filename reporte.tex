@@ -115,6 +115,62 @@ Como es el caso de descuento, ganancia y costo, y nuestro atributos multivaluado
 \section{Normalización}
 En esta sección vamos a realizar el proceso de normalización mediante la 3FN.\\
 \begin{itemize}
+
+
+\item Persona\\
+Sea Persona(id\_persona,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia\\,delegación,colonia,calle,lote,celular,es\_dueño,es\_chofer,es\_cliente).\\
+Para facilitar la normalización renombraremos los atributos como sigue:
+id\_persona = A,nombre = B,paterno = C,materno = D,correo\_electronico = E,fecha\_ingreso = F,fotografia = G,delegación = H,colonia = I,calle = J,lote = K,celular = L,es\_dueño = M, es\_chofer = N y es\_cliente = O\\
+Sea Persona(A,B,C,D,E,F,G,H,I,J,K,L,M) con las dependencias funcionales 
+Infracción = \{A $\rightarrow$ BCDEFGLM, H $\rightarrow$ IJK  \} \\
+\\
+Buscamos atributos superfluos iquierdos:\\
+No tenemos dependencias para buscar elementos superfluos izquierdos.\\
+Buscamos atributos superfluos derechos:\\
+\\
+Sea A $\rightarrow$ BCDEFGLMNO\\
+¿C es superfluo? $\Rightarrow$ A $\rightarrow$ BDEFGLMNO \\
+\{A\}+= \{A,B,D,E,F,G,L,M,N,O\} No aparece C, entonces no es superfluo.\\
+¿B es superfluo? $\Rightarrow$ A $\rightarrow$ CDEFGLMNO \\
+\{A\}+= \{A,C,D,E,F,G,L,M,N,O\} No aparece B, entonces no es superfluo.\\
+¿D es superfluo? $\Rightarrow$ A $\rightarrow$ BCEFGLMNO \\
+\{A\}+= \{A,B,C,E,F,G,L,M,N,O\}  No aparece D, entonces no es superfluo.\\
+¿E es superfluo? $\Rightarrow$ A $\rightarrow$ BCDFGLMNO \\
+\{A\}+= \{A,B,C,D,F,G,L,M,N,O\}  No aparece E, entonces no es superfluo.\\
+¿F es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEGLMNO \\
+\{A\}+= \{A,B,C,D,E,G,L,M,N,O\}  No aparece F, entonces no es superfluo.\\
+¿G es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFLMNO \\
+\{A\}+= \{A,B,C,D,E,F,L,M,N,O\}  No aparece G, entonces no es superfluo.\\
+¿L es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGMNO \\
+\{A\}+= \{A,B,C,D,E,F,G,M,N,O\}  No aparece L, entonces no es superfluo.\\
+¿M es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGLNO \\
+\{A\}+= \{A,B,C,D,E,F,G,L,N,O\}  No aparece M, entonces no es superfluo.\\
+¿N es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGLMO \\
+\{A\}+= \{A,B,C,D,E,F,G,L,M,O\}  No aparece N, entonces no es superfluo.\\
+¿O es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGLMN \\
+\{A\}+= \{A,B,C,D,E,F,G,L,M,N\}  No aparece O, entonces no es superfluo.\\
+\\
+
+Sea H $\rightarrow$ IJK 
+¿I es superfluo? $\Rightarrow$ H $\rightarrow$ JK \\
+\{H\}+= \{H,J,K\} No aparece I, entonces no es superfluo.\\
+¿J es superfluo? $\Rightarrow$ H $\rightarrow$ IK \\
+\{H\}+= \{H,J,K\} No aparece J, entonces no es superfluo.\\
+¿K es superfluo? $\Rightarrow$ H $\rightarrow$ IJ \\
+\{H\}+= \{H,I,J\} No aparece K, entonces no es superfluo.\\
+\\
+Sea Fmin = \{A $\rightarrow$ BCDEFGLM, H $\rightarrow$ IJK  \}\\
+Tendremos las siguientes relaciones resultantes:
+\begin{itemize}
+\item Persona(id\_persona,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,\\ celular,es\_dueño,es\_chofer,es\_cliente)
+\item Dirección(delegación,colonia,calle,lote)
+\end{itemize}
+
+
+
+
+
+
 \item 
 Infracción\\ Sea Infracción (num\_infracción,licencia,costo,delegación,colonia,calle,lote).\\
 Para facilitar la normalización renombraremos los atributos como sigue:
@@ -148,108 +204,30 @@ Tendremos las siguientes relaciones resultantes:
 \end{itemize}
 
 \item Chofer\\
-Sea Chofer(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia\\,delegación,colonia,calle,lote,celular,num\_viajes).\\
+Sea Chofer(id\_persona,num\_licencia)
 Para facilitar la normalización renombraremos los atributos como sigue:
-licencia = A,nombre = B,paterno = C,materno = D,correo\_electronico = E,fecha\_ingreso = F,fotografia = G,delegación = H,colonia = I,calle = J,lote = K,celular = L,num\_viajes = M\\
-Sea Chofer(A,B,C,D,E,F,G,H,I,J,K,L,M) con las dependencias funcionales 
-Infracción = \{A $\rightarrow$ BCDEFGLM, H $\rightarrow$ IJK  \} \\
-\\
-Buscamos atributos superfluos iquierdos:\\
-No tenemos dependencias para buscar elementos superfluos izquierdos.\\
-Buscamos atributos superfluos derechos:\\
-\\
-Sea A $\rightarrow$ BCDEFGLM\\
-¿C es superfluo? $\Rightarrow$ A $\rightarrow$ BDEFGLM \\
-\{A\}+= \{A,B,D,E,F,G,L,M\} No aparece C, entonces no es superfluo.\\
-¿B es superfluo? $\Rightarrow$ A $\rightarrow$ CDEFGLM \\
-\{A\}+= \{A,C,D,E,F,G,L,M\} No aparece B, entonces no es superfluo.\\
-¿D es superfluo? $\Rightarrow$ A $\rightarrow$ BCEFGLM \\
-\{A\}+= \{A,B,C,E,F,G,L,M\}  No aparece D, entonces no es superfluo.\\
-¿E es superfluo? $\Rightarrow$ A $\rightarrow$ BCDFGLM \\
-\{A\}+= \{A,B,C,D,F,G,L,M\}  No aparece E, entonces no es superfluo.\\
-¿F es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEGLM \\
-\{A\}+= \{A,B,C,D,E,G,L,M\}  No aparece F, entonces no es superfluo.\\
-¿G es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFLM \\
-\{A\}+= \{A,B,C,D,E,F,L,M\}  No aparece G, entonces no es superfluo.\\
-¿L es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGM \\
-\{A\}+= \{A,B,C,D,E,F,G,M\}  No aparece L, entonces no es superfluo.\\
-¿M es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGL \\
-\{A\}+= \{A,B,C,D,E,F,G,L\}  No aparece M, entonces no es superfluo.\\
-\\
-Sea H $\rightarrow$ IJK 
-¿I es superfluo? $\Rightarrow$ H $\rightarrow$ JK \\
-\{H\}+= \{H,J,K\} No aparece I, entonces no es superfluo.\\
-¿J es superfluo? $\Rightarrow$ H $\rightarrow$ IK \\
-\{H\}+= \{H,J,K\} No aparece J, entonces no es superfluo.\\
-¿K es superfluo? $\Rightarrow$ H $\rightarrow$ IJ \\
-\{H\}+= \{H,I,J\} No aparece K, entonces no es superfluo.\\
-\\
-Sea Fmin = \{A $\rightarrow$ BCDEFGLM, H $\rightarrow$ IJK  \}\\
-Tendremos las siguientes relaciones resultantes:
-\begin{itemize}
-\item Chofer(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,\\ celular,num\_viajes)
-\item Dirección(delegación,colonia,calle,lote)
-\end{itemize}
-
-\item Ser\\
-Sea Ser(rfc,licencia)
-Para facilitar la normalización renombraremos los atributos como sigue:
-rfc= A y licencia = B
-Sea Ser(A,B) con las dependencias funcionales 
-Ser = \{AB $\rightarrow$ AB\} \\
+ num\_licencia = A y id\_persona= B 
+Sea Chofer(A,B) con las dependencias funcionales 
+Ser = \{A $\rightarrow$ B\} \\
 \\
 Tenemos una única dependencia funcional trivial, ya esta normalizada.
-Sea Fmin = \{AB $\rightarrow$ AB\} \\
 Tendremos las siguientes relaciones resultantes:
 \begin{itemize}
-\item Ser(rfc,licencia)
+\item Chofer(id\_persona,num\_licencia)
 \end{itemize}
 
 
 \item Dueño\\
-Sea Dueño(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso,fotografia,\\ delegación,colonia,calle,lote,celular,num\_viajes,rfc).\\
+Sea Dueño(rfc,id\_persona)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
-licencia = N,nombre = B,paterno = C,materno = D,correo\_electronico = E,fecha\_ingreso = F,fotografia = G,delegación = H,colonia = I,calle = J,lote = K,celular = L,num\_viajes = M, rfc = A\\
-Sea Dueño(A,B,C,D,E,F,G,H,I,J,K,L,M,N) con las dependencias funcionales 
-Dueño = \{A $\rightarrow$ BCDEFGLMN, H $\rightarrow$ IJK  \} \\
+rfc = A y id\_persona = B.\\
+Sea Dueño(A,B) con las dependencias funcionales 
+Dueño = \{A $\rightarrow$ B\} \\
 \\
-Buscamos atributos superfluos iquierdos:\\
-No tenemos dependencias para buscar elementos superfluos izquierdos.\\
-Buscamos atributos superfluos derechos:\\
-\\
-Sea A $\rightarrow$ BCDEFGLMN\\
-¿C es superfluo? $\Rightarrow$ A $\rightarrow$ BDEFGLMN \\
-\{A\}+= \{A,B,D,E,F,G,L,M,N\} No aparece C, entonces no es superfluo.\\
-¿B es superfluo? $\Rightarrow$ A $\rightarrow$ CDEFGLMN \\
-\{A\}+= \{A,C,D,E,F,G,L,M,N\} No aparece B, entonces no es superfluo.\\
-¿D es superfluo? $\Rightarrow$ A $\rightarrow$ BCEFGLMN \\
-\{A\}+= \{A,B,C,E,F,G,L,M,N\}  No aparece D, entonces no es superfluo.\\
-¿E es superfluo? $\Rightarrow$ A $\rightarrow$ BCDFGLMN \\
-\{A\}+= \{A,B,C,D,F,G,L,M,N\}  No aparece E, entonces no es superfluo.\\
-¿F es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEGLMN \\
-\{A\}+= \{A,B,C,D,E,G,L,M,N\}  No aparece F, entonces no es superfluo.\\
-¿G es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFLMN \\
-\{A\}+= \{A,B,C,D,E,F,L,M,N\}  No aparece G, entonces no es superfluo.\\
-¿L es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGMN \\
-\{A\}+= \{A,B,C,D,E,F,G,M,N\}  No aparece L, entonces no es superfluo.\\
-¿M es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGLN \\
-\{A\}+= \{A,B,C,D,E,F,G,L,N\}  No aparece M, entonces no es superfluo.\\
-¿N es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEFGLM \\
-\{A\}+= \{A,B,C,D,E,F,G,L,M\}  No aparece M, entonces no es superfluo.\\
-\\
-Sea H $\rightarrow$ IJK 
-¿I es superfluo? $\Rightarrow$ H $\rightarrow$ JK \\
-\{H\}+= \{H,J,K\} No aparece I, entonces no es superfluo.\\
-¿J es superfluo? $\Rightarrow$ H $\rightarrow$ IK \\
-\{H\}+= \{H,J,K\} No aparece J, entonces no es superfluo.\\
-¿K es superfluo? $\Rightarrow$ H $\rightarrow$ IJ \\
-\{H\}+= \{H,I,J\} No aparece K, entonces no es superfluo.\\
-\\
-Sea Fmin = \{A $\rightarrow$ BCDEFGLMN, H $\rightarrow$ IJK  \}\\
+Tenemos una única dependencia funcional trivial, ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
 \begin{itemize}
-\item Dueño(licencia,nombre,paterno,materno,correo\_electronico,fecha\_ingreso, \\ fotografia,celular,num\_viajes,rfc)
-\item Dirección(delegación,colonia,calle,lote)
+\item Dueño(rfc,id\_persona)
 \end{itemize}
 
 
@@ -316,69 +294,43 @@ Tendremos las siguientes relaciones resultantes:
 
 
 \item Destino\\
-Sea Destino(id\_viaje,destino)\\
+Sea Destino(id\_viaje,delegación,colonia,calle,lote)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
-id\_viaje = A y destino = B.\\
+id\_viaje = A ,delegación = B,colonia = C,calle = D,lote = E\\
 Sea Destino(A,B) con las dependencias funcionales
-Destino = \{A $\twoheadrightarrow$ B\} \\
+Destino = \{A $\twoheadrightarrow$ BCDE\} \\
 \\
 Tenemos una única dependencia funcional trivial, ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
 \begin{itemize}
-\item Destino(id\_viaje,destino)\\
+\item Destino(id\_viaje,delegación,colonia,calle,lote))\\
 \end{itemize}
 
 \item Origen\\
-Sea Origen(id\_viaje,origen)\\
+Sea Origen(id\_viaje,delegación,colonia,calle,lote)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
-id\_viaje = A y origen = B.\\
-Sea Origen(A,B) con las dependencias funcionales
-Origen = \{A $\twoheadrightarrow$ B\} \\
+id\_viaje = A ,delegación = B,colonia = C,calle = D,lote = E\\
+Sea Destino(A,B) con las dependencias funcionales
+Destino = \{A $\twoheadrightarrow$ BCDE\} \\
 \\
 Tenemos una única dependencia funcional trivial, ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
 \begin{itemize}
-\item Sea Origen(id\_viaje,origen)\\
+\item Origen(id\_viaje,delegación,colonia,calle,lote))\\
 \end{itemize}
 
 \item Cliente\\
-Sea Cliente(id\_cliente,nombre,paterno,materno,correo\_electronico,delegación,colonia,calle,  \\ lote,telefono,num\_viajes,ubicación\_cu)\\
+Sea Cliente(id\_cliente,id\_persona,rol,ubicación\_cu)\\
 Para facilitar la normalización renombraremos los atributos como sigue:
-id\_cliente = A,nombre = B,paterno = C,materno = D,correo\_electronico = E,delegación = F,colonia = G,calle = H,lote = I,telefono = J,num\_viajes = K,ubicación\_cu = L.\\
-Sea Cliente(A,B,C,D,E,F,G,H,I,J,K,L) con las dependencias funcionales
-Cliente = \{A $\rightarrow$ BCDEKL, F $\rightarrow$ GHI  \} \\
+id\_cliente = A,id\_persona = B,rol = C,ubicación\_cu = D)
+Sea Cliente(A,B,C,D) con las dependencias funcionales
+Cliente = \{A $\rightarrow$ BCD \} \\
 \\
-Buscamos atributos superfluos iquierdos:\\
-No tenemos dependencias para buscar elementos superfluos izquierdos.\\
-Buscamos atributos superfluos derechos:\\
-\\
-Sea A $\rightarrow$  BCDEKL\\
-¿C es superfluo? $\Rightarrow$ A $\rightarrow$ BDEKL \\
-\{A\}+= \{A,B,D,E,K,L\} No aparece C, entonces no es superfluo.\\
-¿B es superfluo? $\Rightarrow$ A $\rightarrow$ CDEKL \\
-\{A\}+= \{A,C,D,E,K,L\} No aparece B, entonces no es superfluo.\\
-¿D es superfluo? $\Rightarrow$ A $\rightarrow$ BCEKL \\
-\{A\}+= \{A,B,C,E,K,L\}  No aparece D, entonces no es superfluo.\\
-¿E es superfluo? $\Rightarrow$ A $\rightarrow$ BCDKL \\
-\{A\}+= \{A,B,C,D,K,L\}  No aparece E, entonces no es superfluo.\\
-¿K es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEL \\
-\{A\}+= \{A,B,C,D,E,L\}  No aparece K, entonces no es superfluo.\\
-¿L es superfluo? $\Rightarrow$ A $\rightarrow$ BCDEK \\
-\{A\}+= \{A,B,C,D,E,K\}  No aparece L, entonces no es superfluo.\\
-\\
-Sea  F $\rightarrow$ GHI 
-¿G es superfluo? $\Rightarrow$ F $\rightarrow$ HI \\
-\{F\}+= \{F,H,I\} No aparece G, entonces no es superfluo.\\
-¿H es superfluo? $\Rightarrow$ F $\rightarrow$ GI \\
-\{F\}+= \{F,G,I\} No aparece H, entonces no es superfluo.\\
-¿I es superfluo? $\Rightarrow$ F $\rightarrow$ GH \\
-\{F\}+= \{F,G,H\} No aparece I, entonces no es superfluo.\\
-\\
-Sea Fmin = \{A $\rightarrow$ BCDEKL, F $\rightarrow$ GHI  \} \\
+Tenemos una única dependencia funcional, entonce no hay otr manera 
+de alcanzar los atributos, es decir ya esta normalizada.
 Tendremos las siguientes relaciones resultantes:
 \begin{itemize}
-\item Cliente(id\_cliente,nombre,paterno,materno,correo\_electronico,telefono,num\_viajes,ubicación\_cu)
-\item Dirección(delegación,colonia,calle,lote)
+\item Cliente(id\_cliente,id\_cliente,rol,ubicación\_cu)
 \end{itemize}
 
 
@@ -408,14 +360,13 @@ misma relación.
 \begin{itemize}
 \item Sea Transportar(id\_viaje,id\_cliente,licencia,vehiculo\_numero\_economico) \\
 \end{itemize}
-
-
 \end{itemize}
+
 Después de normalizar tendremos las siguientes relaciones:
 \begin{itemize}
 \item Infracción\\
 \item Chofer\\
-\item Ser\\
+\item Persona\\
 \item Dueño\\
 \item Vehículo\\
 \item Asegurar\\
@@ -427,12 +378,10 @@ Después de normalizar tendremos las siguientes relaciones:
 \item Rol\\
 \item Transportar\\
 \item Dirección\\
-
+\\
 \end{itemize}
 
 
-
-
 \section{Referencias}
-
 \end{document}
+
