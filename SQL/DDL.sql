@@ -289,3 +289,11 @@ ALTER TABLE
 dueños ADD CONSTRAINT fk_id_persona_dueños FOREIGN KEY(id_persona) REFERENCES persona(id_persona)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
+
+--ORIGEN columna para conocer si la ubicacion esta en CU
+ALTER TABLE origen
+ADD en_cu BIT;
+
+--DESTINO columna para conocer si la ubicacion esta en CU
+ALTER TABLE destino
+ADD en_cu BIT;
