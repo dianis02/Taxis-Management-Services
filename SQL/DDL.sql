@@ -42,7 +42,7 @@ lote INT
 CREATE TABLE
 vehiculo(
 numero_economico INT NOT NULL,
-año INT,
+aÃ±o INT,
 modelo VARCHAR,
 marca VARCHAR,
 cilindros INT,
@@ -60,7 +60,7 @@ CREATE TABLE
 asegurar(
 aseguradoras_rfc VARCHAR NOT NULL,
 numero_economico INT NOT NULL,
-dueño_rfc VARCHAR NOT NULL,
+dueÃ±o_rfc VARCHAR NOT NULL,
 num_seguro INT NOT NULL,
 cobertura VARCHAR
 )
@@ -72,7 +72,7 @@ nombre VARCHAR
 )
 
 CREATE TABLE
-dueños(
+dueÃ±os(
 rfc VARCHAR NOT NULL,
 id_persona VARCHAR NOT NULL
 )
@@ -97,6 +97,7 @@ infracciones(
 num_infraccion INT NOT NULL,
 num_licencia INT NOT NULL,
 costo_original INT,
+fecha_infraccion VARCHAR
 )
 
 CREATE TABLE
@@ -113,7 +114,7 @@ materno VARCHAR,
 celular INT,
 fotografia VARCHAR,
 correo_electronico VARCHAR,
-es_dueño VARCHAR,
+es_dueÃ±o VARCHAR,
 es_chofer VARCHAR,
 es_cliente VARCHAR
 )
@@ -155,15 +156,15 @@ choferes ADD CONSTRAINT pk_licencia PRIMARY KEY(num_licencia);
 --clientes
 ALTER TABLE
 clientes ADD CONSTRAINT pk_id_cliente PRIMARY KEY(id_cliente);
---dueños
+--dueÃ±os
 ALTER TABLE
-dueños ADD CONSTRAINT pk_dueños_rfc PRIMARY KEY(rfc);
+dueÃ±os ADD CONSTRAINT pk_dueÃ±os_rfc PRIMARY KEY(rfc);
 --vehiculo
 ALTER TABLE 
 vehiculo ADD CONSTRAINT pk_numero_economico PRIMARY KEY(numero_economico);
 --asegurar
 ALTER TABLE
-asegurar ADD CONSTRAINT pk_asegurar PRIMARY KEY(dueño_rfc,aseguradoras_rfc,numero_economico, num_seguro);
+asegurar ADD CONSTRAINT pk_asegurar PRIMARY KEY(dueÃ±o_rfc,aseguradoras_rfc,numero_economico, num_seguro);
 
 --aseguradoras
 ALTER TABLE
@@ -233,7 +234,7 @@ ON UPDATE NO ACTION;
 
 --Asegurar
 ALTER TABLE
-asegurar ADD CONSTRAINT fk_dueños_rfc FOREIGN KEY(dueño_rfc) REFERENCES dueños(rfc)
+asegurar ADD CONSTRAINT fk_dueÃ±os_rfc FOREIGN KEY(dueÃ±o_rfc) REFERENCES dueÃ±os(rfc)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
@@ -283,10 +284,10 @@ clientes ADD CONSTRAINT fk_id_persona_clientes FOREIGN KEY(id_persona) REFERENCE
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
---Dueños
+--DueÃ±os
 
 ALTER TABLE
-dueños ADD CONSTRAINT fk_id_persona_dueños FOREIGN KEY(id_persona) REFERENCES persona(id_persona)
+dueÃ±os ADD CONSTRAINT fk_id_persona_dueÃ±os FOREIGN KEY(id_persona) REFERENCES persona(id_persona)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
