@@ -16,7 +16,7 @@ TABLE
 viaje (
 id_viaje INT NOT NULL,
 fecha DATE,
-tiempo TIME,
+tiempo VARCHAR,
 distancia INT,
 personas INT 
 );
@@ -97,6 +97,7 @@ infracciones(
 num_infraccion INT NOT NULL,
 num_licencia INT NOT NULL,
 costo_original INT,
+fecha_infraccion DATE NOT NULL
 )
 
 CREATE TABLE
@@ -110,12 +111,13 @@ id_persona VARCHAR NOT NULL,
 nombre VARCHAR NOT NULL,
 paterno VARCHAR NOT NULL,
 materno VARCHAR,
-celular INT,
+celular VARCHAR,
 fotografia VARCHAR,
 correo_electronico VARCHAR,
 es_dueño VARCHAR,
 es_chofer VARCHAR,
-es_cliente VARCHAR
+es_cliente VARCHAR,
+fecha_ingreso DATE
 )
 
 CREATE TABLE
