@@ -16,7 +16,7 @@ TABLE
 viaje (
 id_viaje INT NOT NULL,
 fecha DATE,
-tiempo VARCHAR,
+tiempo TIME,
 distancia INT,
 personas INT 
 );
@@ -24,72 +24,72 @@ personas INT
 CREATE TABLE
 destino(
 id_viaje INT NOT NULL,
-delegacion VARCHAR,
-colonia VARCHAR,
-calle  VARCHAR,
+delegacion VARCHAR(255),
+colonia VARCHAR(255),
+calle  VARCHAR(255),
 lote INT
 )
 
 CREATE TABLE
 origen(
 id_viaje INT NOT NULL,
-delegacion VARCHAR,
-colonia VARCHAR,
-calle  VARCHAR,
+delegacion VARCHAR(255),
+colonia VARCHAR(255),
+calle  VARCHAR(255),
 lote INT
 )
 
 CREATE TABLE
 vehiculo(
 numero_economico INT NOT NULL,
-aÃ±o INT,
-modelo VARCHAR,
-marca VARCHAR,
+año INT,
+modelo VARCHAR(255),
+marca VARCHAR(255),
 cilindros INT,
-descripcion_baja VARCHAR,
+descripcion_baja VARCHAR(255),
 activo BIT,
 num_puertas INT,
 num_pasajeros INT,
-transmicion VARCHAR,
+transmicion VARCHAR(255),
 llanta_refaccion BIT,
-combustible VARCHAR,
+combustible VARCHAR(255),
 fecha_baja DATE
 )
 
 CREATE TABLE 
 asegurar(
-aseguradoras_rfc VARCHAR NOT NULL,
+aseguradoras_rfc VARCHAR(255) NOT NULL,
 numero_economico INT NOT NULL,
-dueÃ±o_rfc VARCHAR NOT NULL,
+dueño_rfc VARCHAR(255) NOT NULL,
 num_seguro INT NOT NULL,
-cobertura VARCHAR
+cobertura VARCHAR(255)
 )
 
 CREATE TABLE
 aseguradoras(
-rfc VARCHAR NOT NULL,
-nombre VARCHAR
+rfc VARCHAR(255) NOT NULL,
+nombre VARCHAR(255)
 )
 
 CREATE TABLE
-dueÃ±os(
-rfc VARCHAR NOT NULL,
-id_persona VARCHAR NOT NULL
+dueños(
+rfc VARCHAR(255) NOT NULL,
+id_persona VARCHAR(255) NOT NULL
 )
 
 CREATE TABLE
 direccion(
-id_persona VARCHAR NOT NULL,
-delegacion VARCHAR,
-colonia VARCHAR,
-calle VARCHAR,
+id_persona VARCHAR(255) NOT NULL,
+delegacion VARCHAR(255),
+colonia VARCHAR(255),
+calle VARCHAR(255),
 lote INT
 )
 
 CREATE TABLE
 choferes(
 num_licencia INT NOT NULL,
-id_persona VARCHAR NOT NULL
+id_persona VARCHAR(255) NOT NULL
 )
 
 CREATE TABLE 
@@ -97,34 +97,33 @@ infracciones(
 num_infraccion INT NOT NULL,
 num_licencia INT NOT NULL,
 costo_original INT,
-fecha_infraccion DATE NOT NULL
 )
 
 CREATE TABLE
 rol(
 id_cliente INT NOT NULL,
-rol VARCHAR NOT NULL
+rol VARCHAR(255) NOT NULL
 )
 CREATE TABLE
 persona(
-id_persona VARCHAR NOT NULL,
-nombre VARCHAR NOT NULL,
-paterno VARCHAR NOT NULL,
-materno VARCHAR,
-celular VARCHAR,
-fotografia VARCHAR,
-correo_electronico VARCHAR,
-es_dueÃ±o VARCHAR,
-es_chofer VARCHAR,
-es_cliente VARCHAR,
-fecha_ingreso DATE
+id_persona VARCHAR(255) NOT NULL,
+nombre VARCHAR(255) NOT NULL,
+paterno VARCHAR(255) NOT NULL,
+materno VARCHAR(255),
+fecha_ingreso DATE,
+celular VARCHAR(255),
+fotografia VARCHAR(255),
+correo_electronico VARCHAR(255),
+es_dueño VARCHAR(255),
+es_chofer VARCHAR(255),
+es_cliente VARCHAR(255)
 )
 
 CREATE TABLE
 clientes(
 id_cliente INT NOT NULL,
-id_persona VARCHAR NOT NULL,
-ubicacion_cu VARCHAR
+id_persona VARCHAR(255) NOT NULL,
+ubicacion_cu VARCHAR(255)
 )
 
 CREATE TABLE
@@ -138,9 +137,9 @@ num_licencia INT NOT NULL
 CREATE TABLE
 direccion_infraccion(
 num_infraccion  INT NOT NULL,
-delegacion VARCHAR,
-colonia VARCHAR,
-calle VARCHAR,
+delegacion VARCHAR(255),
+colonia VARCHAR(255),
+calle VARCHAR(255),
 lote INT
 )
 --Constraints
@@ -157,15 +156,15 @@ choferes ADD CONSTRAINT pk_licencia PRIMARY KEY(num_licencia);
 --clientes
 ALTER TABLE
 clientes ADD CONSTRAINT pk_id_cliente PRIMARY KEY(id_cliente);
---dueÃ±os
+--dueños
 ALTER TABLE
-dueÃ±os ADD CONSTRAINT pk_dueÃ±os_rfc PRIMARY KEY(rfc);
+dueños ADD CONSTRAINT pk_dueños_rfc PRIMARY KEY(rfc);
 --vehiculo
 ALTER TABLE 
 vehiculo ADD CONSTRAINT pk_numero_economico PRIMARY KEY(numero_economico);
 --asegurar
 ALTER TABLE
-asegurar ADD CONSTRAINT pk_asegurar PRIMARY KEY(dueÃ±o_rfc,aseguradoras_rfc,numero_economico, num_seguro);
+asegurar ADD CONSTRAINT pk_asegurar PRIMARY KEY(dueño_rfc,aseguradoras_rfc,numero_economico, num_seguro);
 
 --aseguradoras
 ALTER TABLE
@@ -235,7 +234,7 @@ ON UPDATE NO ACTION;
 
 --Asegurar
 ALTER TABLE
-asegurar ADD CONSTRAINT fk_dueÃ±os_rfc FOREIGN KEY(dueÃ±o_rfc) REFERENCES dueÃ±os(rfc)
+asegurar ADD CONSTRAINT fk_dueños_rfc FOREIGN KEY(dueño_rfc) REFERENCES dueños(rfc)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
@@ -285,17 +284,19 @@ clientes ADD CONSTRAINT fk_id_persona_clientes FOREIGN KEY(id_persona) REFERENCE
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
---DueÃ±os
+--Dueños
 
 ALTER TABLE
-dueÃ±os ADD CONSTRAINT fk_id_persona_dueÃ±os FOREIGN KEY(id_persona) REFERENCES persona(id_persona)
+dueños ADD CONSTRAINT fk_id_persona_dueños FOREIGN KEY(id_persona) REFERENCES persona(id_persona)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
 --ORIGEN columna para conocer si la ubicacion esta en CU
-ALTER TABLE origen
-ADD en_cu BIT;
+ALTER TABLE origen 
+DROP COLUMN en_cu;
 
 --DESTINO columna para conocer si la ubicacion esta en CU
 ALTER TABLE destino
-ADD en_cu BIT;
+DROP COLUMN en_cu;
+
+

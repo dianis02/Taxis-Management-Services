@@ -1,0 +1,203 @@
+﻿numero_economico,año,modelo,marca,cilindros,descripcion_baja,activo,num_puertas,num_pasajeros,transmicion,llanta_refaccion,combustible,fecha_baja
+10201,2004,E-Class,Mercedes-Benz,5,Verificacion,0,3,3,Automatico,1,Gasolina,2018-06-24
+10231,1985,Topaz,Mercury,4,Accidente,0,4,3,Estandar,0,Gasolina,2017-12-09
+10528,1999,E-Class,Mercedes-Benz,4,Verificacion,1,5,5,Estandar,0,Gasolina,2018-10-20
+10733,2004,Outlander,Mitsubishi,6,Daño al vehiculo,0,4,4,Estandar,1,Hibrido,2018-05-05
+11184,1998,Mark VIII,Lincoln,6,Robado,0,5,3,Automatico,1,Hibrido,2018-07-01
+11648,2006,Escalade,Cadillac,6,Daño al vehiculo,1,5,5,Automatico,1,Hibrido,2018-09-23
+12441,2007,F250,Ford,6,Robado,1,5,3,Estandar,1,Gasolina,2018-11-02
+12621,2001,Metro,Chevrolet,6,Verificacion,1,4,4,Estandar,0,Gasolina,2018-04-08
+13265,1994,100,Audi,6,Robado,0,5,2,Automatico,0,Gasolina,2018-03-20
+13914,1996,Tacoma,Toyota,6,Verificacion,1,3,4,Automatico,1,Hibrido,2018-04-19
+14027,2009,Edge,Ford,4,Robado,1,3,1,Estandar,1,Hibrido,2018-05-18
+14458,1994,Cutlass Supreme,Oldsmobile,5,Robado,1,3,4,Automatico,0,Hibrido,2018-07-31
+16784,2009,Touareg 2,Volkswagen,5,Verificacion,1,5,5,Automatico,1,Gasolina,2018-01-16
+16810,1994,Fleetwood,Cadillac,6,Accidente,1,5,3,Estandar,1,Gasolina,2018-02-18
+17461,1995,Sable,Mercury,6,Robado,1,5,1,Estandar,1,Gasolina,2018-08-02
+17780,2003,Avalanche 2500,Chevrolet,4,Daño al vehiculo,1,5,5,Automatico,1,Hibrido,2018-08-05
+18258,2010,Cooper,MINI,6,Verificacion,1,4,1,Estandar,1,Gasolina,2018-01-15
+19248,1998,Intrepid,Dodge,4,Robado,1,5,5,Automatico,0,Gasolina,2018-03-02
+20037,1991,MPV,Mazda,5,Robado,0,3,5,Automatico,0,Gasolina,2018-11-21
+20322,2012,Sierra 1500,GMC,6,Robado,1,5,5,Automatico,1,Gasolina,2018-02-14
+21463,2010,Silverado 3500,Chevrolet,5,Verificacion,0,4,2,Automatico,1,Hibrido,2017-12-06
+22017,1986,E-Class,Mercedes-Benz,4,Verificacion,0,5,3,Automatico,0,Gasolina,2018-01-05
+23244,1995,Bronco,Ford,5,Verificacion,1,4,4,Estandar,0,Gasolina,2018-07-19
+24167,2000,Sienna,Toyota,4,Robado,1,4,3,Automatico,0,Hibrido,2018-05-18
+25466,2007,Express,Chevrolet,4,Robado,0,3,1,Automatico,0,Hibrido,2018-10-11
+26040,2010,S5,Audi,6,Robado,1,4,2,Estandar,1,Hibrido,2018-08-25
+26288,2002,5 Series,BMW,6,Daño al vehiculo,0,3,4,Estandar,1,Gasolina,2018-06-28
+27252,2002,XK Series,Jaguar,4,Verificacion,1,4,4,Automatico,0,Gasolina,2018-07-05
+28921,1995,Spirit,Dodge,6,Accidente,0,4,2,Estandar,1,Hibrido,2018-11-14
+29979,2007,Suburban 2500,Chevrolet,4,Robado,1,5,2,Automatico,0,Hibrido,2018-10-15
+30053,2006,Baja,Subaru,4,Accidente,0,3,2,Automatico,1,Gasolina,2018-06-17
+30198,2009,Challenger,Dodge,6,Robado,1,4,5,Estandar,0,Gasolina,2018-02-15
+30694,2006,Thunderbird,Ford,4,Accidente,0,4,5,Automatico,1,Gasolina,2018-07-27
+30730,2006,Vanquish S,Aston Martin,5,Daño al vehiculo,0,4,2,Estandar,1,Hibrido,2018-02-01
+31215,1993,Lumina APV,Chevrolet,4,Robado,1,3,1,Estandar,1,Gasolina,2018-07-15
+31720,2001,Blazer,Chevrolet,5,Accidente,1,4,3,Automatico,1,Gasolina,2018-07-29
+32525,1998,Trans Sport,Pontiac,5,Accidente,0,3,2,Estandar,0,Hibrido,2018-12-13
+32632,1960,Corvette,Chevrolet,5,Verificacion,1,4,4,Estandar,1,Hibrido,2018-05-12
+33189,2001,Explorer Sport Trac,Ford,4,Robado,0,4,4,Estandar,1,Gasolina,2018-04-30
+33786,2004,Z4,BMW,5,Verificacion,1,5,1,Estandar,0,Gasolina,2018-01-16
+34300,2009,Taurus,Ford,6,Robado,0,4,1,Automatico,1,Hibrido,2018-09-01
+35141,2010,M-Class,Mercedes-Benz,5,Daño al vehiculo,0,3,4,Estandar,0,Gasolina,2018-07-16
+35193,2010,Equator,Suzuki,5,Robado,1,5,2,Estandar,1,Gasolina,2018-09-18
+35967,1989,Cougar,Mercury,4,Daño al vehiculo,0,4,3,Automatico,1,Gasolina,2018-01-13
+36024,1990,Sable,Mercury,4,Robado,1,5,2,Automatico,1,Hibrido,2018-05-28
+36238,1988,Cabriolet,Volkswagen,5,Daño al vehiculo,0,3,2,Estandar,1,Hibrido,2018-07-10
+36786,2000,Silverado 1500,Chevrolet,6,Robado,0,4,4,Estandar,0,Gasolina,2018-08-24
+37478,1992,Spirit,Dodge,6,Robado,1,5,3,Estandar,1,Hibrido,2018-08-24
+38178,1998,X-90,Suzuki,5,Daño al vehiculo,0,4,1,Automatico,1,Hibrido,2018-07-20
+38744,2006,Phantom,Rolls-Royce,6,Robado,1,5,3,Estandar,0,Hibrido,2018-04-28
+38755,1998,Cabriolet,Volkswagen,4,Robado,1,5,3,Estandar,1,Gasolina,2018-04-10
+38846,2002,S4,Audi,6,Robado,0,3,1,Automatico,1,Gasolina,2018-08-16
+38913,2003,Mustang,Ford,4,Robado,0,4,1,Estandar,0,Hibrido,2018-06-17
+39691,2008,Aero 8,Morgan,5,Verificacion,1,5,2,Estandar,0,Gasolina,2017-12-15
+39948,2001,NSX,Acura,6,Accidente,1,3,5,Estandar,0,Gasolina,2017-12-31
+40551,1996,3500 Club Coupe,GMC,4,Accidente,0,4,2,Estandar,1,Hibrido,2017-12-10
+40749,1989,Continental,Lincoln,4,Verificacion,0,3,1,Automatico,0,Gasolina,2018-10-13
+41615,2006,TT,Audi,4,Robado,1,5,1,Automatico,0,Hibrido,2018-02-05
+42418,1995,Club Wagon,Ford,4,Robado,1,3,2,Automatico,0,Gasolina,2018-10-31
+43340,2012,Frontier,Nissan,6,Verificacion,1,4,5,Estandar,1,Hibrido,2018-08-16
+43661,2004,Pacifica,Chrysler,4,Verificacion,1,4,5,Estandar,1,Hibrido,2018-08-09
+44169,2006,6 Series,BMW,4,Accidente,1,3,3,Estandar,0,Hibrido,2018-01-08
+44213,2006,MPV,Mazda,4,Verificacion,0,4,2,Estandar,0,Gasolina,2018-03-26
+44217,1995,Coachbuilder,Buick,5,Robado,1,5,2,Automatico,0,Hibrido,2018-11-10
+46294,1991,Grand Marquis,Mercury,6,Robado,1,3,5,Automatico,1,Hibrido,2018-07-03
+46326,1992,New Yorker,Chrysler,5,Daño al vehiculo,0,3,3,Automatico,1,Gasolina,2018-05-02
+46647,2007,B9 Tribeca,Subaru,4,Robado,1,3,2,Automatico,1,Gasolina,2018-11-26
+47287,2010,Suburban,Chevrolet,5,Verificacion,0,5,2,Automatico,0,Gasolina,2018-07-08
+47744,2009,Murciélago,Lamborghini,6,Robado,0,4,5,Automatico,0,Gasolina,2018-08-19
+47821,2012,S4,Audi,5,Robado,1,4,3,Automatico,1,Hibrido,2017-12-18
+48316,2008,SLR McLaren,Mercedes-Benz,4,Verificacion,0,5,1,Estandar,1,Hibrido,2018-02-12
+48503,2009,Durango,Dodge,6,Robado,0,3,1,Automatico,0,Gasolina,2018-08-08
+48570,1967,Tempest,Pontiac,4,Verificacion,0,3,2,Automatico,0,Gasolina,2018-09-27
+49834,1994,Sephia,Kia,5,Robado,1,4,4,Estandar,0,Hibrido,2018-12-29
+49847,1992,Trooper,Isuzu,5,Verificacion,0,5,3,Estandar,1,Hibrido,2018-07-13
+49975,1986,Tempo,Ford,6,Daño al vehiculo,1,5,3,Estandar,1,Hibrido,2018-02-01
+50102,2006,Silverado Hybrid,Chevrolet,4,Verificacion,0,3,4,Estandar,1,Gasolina,2018-08-25
+50261,2005,S40,Volvo,4,Daño al vehiculo,0,5,5,Automatico,1,Hibrido,2017-12-16
+50334,1993,Mighty Max,Mitsubishi,6,Accidente,0,5,1,Estandar,1,Gasolina,2018-03-31
+50412,1983,W126,Mercedes-Benz,5,Robado,0,4,4,Estandar,0,Hibrido,2018-09-05
+51144,2012,Continental,Bentley,6,Verificacion,1,5,2,Automatico,0,Gasolina,2018-02-04
+51487,1993,SVX,Subaru,6,Robado,1,5,3,Estandar,0,Gasolina,2018-08-11
+51775,1997,Ram 2500,Dodge,4,Robado,1,5,2,Automatico,1,Hibrido,2018-08-03
+52336,1993,T100,Toyota,6,Verificacion,0,4,4,Automatico,0,Hibrido,2018-08-11
+52552,2000,Taurus,Ford,6,Verificacion,0,4,3,Automatico,1,Gasolina,2018-06-30
+52794,2010,Liberty,Jeep,4,Verificacion,0,5,3,Estandar,1,Gasolina,2018-07-21
+53125,2006,Sierra Denali,GMC,4,Robado,1,3,1,Estandar,1,Hibrido,2018-09-12
+53206,2004,Murano,Nissan,5,Asistencia Médica,0,5,5,Automatico,0,Hibidro,2018-09-22
+53841,2011,Kizashi,Suzuki,5,Accidente,1,4,5,Estandar,0,Hibrido,2017-12-22
+54357,1992,Explorer,Ford,5,Robado,0,4,5,Estandar,1,Gasolina,2018-05-19
+54695,1992,Century,Buick,6,Robado,0,4,4,Automatico,1,Hibrido,2018-05-07
+54712,2010,Endeavor,Mitsubishi,4,Robado,0,4,5,Estandar,1,Hibrido,2018-01-04
+55380,2011,RX-8,Mazda,6,Robado,0,4,5,Estandar,0,Gasolina,2017-12-29
+55439,1997,Suburban 1500,Chevrolet,6,Robado,0,4,2,Estandar,0,Hibrido,2018-10-10
+55898,2010,V50,Volvo,4,Robado,1,4,3,Estandar,0,Gasolina,2018-06-05
+56265,2004,Amanti,Kia,5,Verificacion,0,5,1,Estandar,1,Hibrido,2018-02-08
+56460,2007,Crossfire,Chrysler,4,Robado,0,4,3,Estandar,0,Gasolina,2018-10-02
+57057,2008,Daewoo Lacetti,Suzuki,5,Robado,0,3,1,Estandar,1,Gasolina,2018-06-10
+57166,1968,Cougar,Mercury,4,Verificacion,0,4,2,Estandar,0,Hibrido,2018-04-12
+57460,2011,Grand Vitara,Suzuki,5,Robado,0,3,5,Estandar,1,Hibrido,2017-12-10
+57646,2008,SL-Class,Mercedes-Benz,5,Robado,1,5,5,Automatico,1,Gasolina,2018-04-10
+57676,1993,Sixty Special,Cadillac,6,Robado,0,5,1,Automatico,0,Hibrido,2018-03-27
+57783,2002,M5,BMW,6,Verificacion,0,4,3,Estandar,1,Hibrido,2018-07-19
+57974,1980,Grand Prix,Pontiac,4,Daño al vehiculo,1,4,2,Automatico,0,Gasolina,2018-12-27
+58140,1996,Passport,Honda,6,Daño al vehiculo,1,4,1,Automatico,0,Hibrido,2018-04-10
+58382,2011,9-4X,Saab,6,Robado,0,5,5,Automatico,1,Gasolina,2018-06-28
+58566,1994,Ciera,Oldsmobile,4,Daño al vehiculo,0,5,5,Automatico,0,Gasolina,2018-10-30
+60550,2001,S60,Volvo,4,Robado,1,3,1,Automatico,0,Hibrido,2018-02-15
+60777,2010,PT Cruiser,Chrysler,4,Robado,1,4,3,Estandar,0,Hibrido,2018-06-10
+62161,1997,Grand Prix,Pontiac,6,Robado,1,3,5,Automatico,1,Gasolina,2018-01-07
+62269,2005,Sierra 2500,GMC,6,Accidente,0,5,2,Automatico,1,Hibrido,2018-10-09
+62768,2005,Lancer,Mitsubishi,5,Daño al vehiculo,1,3,3,Automatico,0,Hibrido,2018-10-03
+63157,2007,XL7,Suzuki,4,Accidente,1,5,3,Estandar,1,Hibrido,2018-01-16
+63799,2005,V50,Volvo,4,Robado,0,3,3,Automatico,1,Gasolina,2018-09-10
+64162,1999,TL,Acura,6,Daño al vehiculo,0,4,3,Estandar,1,Gasolina,2018-07-10
+64981,1996,LS,Lexus,4,Robado,1,3,2,Automatico,0,Hibrido,2018-09-08
+65090,1997,GTO,Mitsubishi,4,Robado,0,5,5,Automatico,1,Gasolina,2018-06-30
+65093,2010,370Z,Nissan,4,Robado,0,5,2,Estandar,0,Hibrido,2018-07-26
+65128,1970,Corvette,Chevrolet,4,Daño al vehiculo,1,4,1,Automatico,0,Gasolina,2018-12-28
+65168,1988,Accord,Honda,4,Robado,0,4,2,Estandar,0,Gasolina,2018-07-19
+65806,2008,Aero 8,Morgan,6,Robado,0,3,5,Automatico,1,Gasolina,2018-10-14
+66100,2008,RX-8,Mazda,4,Daño al vehiculo,1,4,5,Automatico,1,Hibrido,2018-03-07
+66663,1992,SL-Class,Mercedes-Benz,5,Robado,1,3,3,Automatico,0,Hibrido,2018-06-22
+66702,1996,Z3,BMW,5,Robado,0,3,1,Automatico,1,Gasolina,2018-03-19
+66988,2012,Santa Fe,Hyundai,6,Accidente,0,5,5,Automatico,1,Hibrido,2018-04-08
+68113,2001,Impala,Chevrolet,6,Robado,0,3,5,Estandar,1,Gasolina,2018-07-10
+68677,2009,XC60,Volvo,5,Robado,1,5,2,Automatico,0,Gasolina,2018-02-06
+69134,1998,Trans Sport,Pontiac,6,Verificacion,0,4,2,Estandar,0,Gasolina,2018-06-13
+69381,1994,Elan,Lotus,6,Robado,0,5,2,Estandar,0,Hibrido,2018-01-09
+69660,2001,ZX2,Ford,5,Robado,1,3,4,Automatico,0,Gasolina,2018-11-17
+70174,2006,Phantom,Rolls-Royce,6,Verificacion,0,3,2,Estandar,0,Hibrido,2018-12-19
+70635,2002,B-Series,Mazda,6,Robado,0,3,4,Estandar,1,Hibrido,2018-03-06
+71344,1985,LTD,Ford,4,Accidente,1,5,2,Automatico,1,Hibrido,2018-06-24
+71938,1997,Supra,Toyota,6,Verificacion,1,5,5,Automatico,0,Hibrido,2018-05-12
+72142,1997,Civic,Honda,4,Robado,1,4,5,Automatico,1,Gasolina,2018-08-23
+72183,1993,88,Oldsmobile,4,Robado,0,4,5,Estandar,1,Gasolina,2018-11-15
+72649,2003,Celica,Toyota,6,Robado,0,3,5,Estandar,0,Hibrido,2018-09-01
+72732,2012,Savana,GMC,4,Robado,0,3,4,Estandar,1,Hibrido,2018-09-10
+72744,2006,tC,Scion,6,Daño al vehiculo,0,3,1,Estandar,1,Gasolina,2018-06-28
+73381,2002,Aurora,Oldsmobile,5,Accidente,1,3,4,Estandar,1,Hibrido,2018-07-15
+74416,2001,A6,Audi,4,Robado,1,3,1,Estandar,1,Hibrido,2018-06-08
+74694,1987,Courier,Ford,6,Robado,1,4,1,Estandar,0,Hibrido,2018-08-08
+74919,2007,Pilot,Honda,5,Verificacion,1,4,1,Estandar,1,Gasolina,2018-04-09
+75152,2002,Yukon,GMC,6,Robado,0,3,1,Estandar,1,Hibrido,2018-06-12
+75548,1997,Suburban 1500,GMC,5,Verificacion,1,3,3,Automatico,0,Hibrido,2018-12-10
+76326,2003,Express 1500,Chevrolet,5,Accidente,0,3,1,Estandar,0,Hibrido,2018-10-27
+76439,1994,Grand Prix,Pontiac,4,Verificacion,1,4,5,Estandar,1,Hibrido,2018-02-28
+77067,1990,Bronco II,Ford,6,Robado,1,4,5,Estandar,0,Hibrido,2018-01-19
+77131,2011,Focus,Ford,6,Robado,0,3,2,Automatico,1,Gasolina,2018-10-17
+77583,2002,Eurovan,Volkswagen,4,Verificacion,0,5,5,Automatico,0,Gasolina,2018-12-20
+77728,2008,GX,Lexus,6,Robado,0,5,5,Estandar,0,Hibrido,2018-04-24
+79451,1994,240SX,Nissan,4,Verificacion,0,3,3,Automatico,0,Hibrido,2018-09-03
+79547,1995,Crown Victoria,Ford,6,Accidente,1,5,1,Automatico,1,Gasolina,2018-10-05
+79959,2010,Silverado 1500,Chevrolet,5,Robado,1,4,1,Automatico,0,Hibrido,2018-02-26
+80900,2003,Axiom,Isuzu,4,Robado,0,4,2,Automatico,0,Hibrido,2018-05-22
+81136,1992,SL-Class,Mercedes-Benz,5,Verificacion,1,5,4,Estandar,1,Gasolina,2018-12-21
+81232,2007,Elise,Lotus,6,Daño al vehiculo,0,5,2,Automatico,0,Hibrido,2018-09-06
+81580,1980,Mustang,Ford,4,Accidente,0,4,5,Estandar,0,Gasolina,2018-03-13
+81993,2006,G,Infiniti,5,Robado,1,5,2,Automatico,0,Hibrido,2018-11-18
+82174,1996,Altima,Nissan,4,Accidente,1,4,4,Estandar,0,Hibrido,2018-04-24
+82478,2009,Tribute,Mazda,5,Robado,1,3,1,Automatico,0,Hibrido,2018-08-10
+83341,2004,Boxster,Porsche,5,Robado,0,4,4,Estandar,1,Gasolina,2017-12-26
+83420,1984,Brat,Subaru,6,Robado,1,3,2,Automatico,1,Gasolina,2018-11-11
+83618,1995,Pathfinder,Nissan,5,Robado,0,4,1,Estandar,0,Hibrido,2017-12-21
+84391,2004,C8 Spyder Wide Body,Spyker,5,Verificacion,1,5,4,Estandar,1,Hibrido,2018-10-04
+84456,2004,760,BMW,5,Accidente,0,5,4,Estandar,1,Hibrido,2018-05-05
+85203,2002,Z8,BMW,6,Verificacion,1,5,2,Automatico,0,Gasolina,2018-07-09
+86870,1996,riolet,Audi,4,Robado,0,5,3,Estandar,0,Hibrido,2018-06-19
+87122,2006,RL,Acura,5,Verificacion,0,4,2,Estandar,0,Hibrido,2018-04-03
+88396,2005,Savana 3500,GMC,4,Accidente,1,3,3,Estandar,0,Hibrido,2018-03-28
+88441,2004,Santa Fe,Hyundai,5,Robado,1,4,3,Automatico,0,Hibrido,2017-12-05
+88660,1984,Jetta,Volkswagen,6,Robado,1,5,4,Automatico,1,Gasolina,2018-02-10
+88964,2002,525,BMW,6,Robado,1,4,4,Estandar,0,Hibrido,2018-05-02
+89159,2000,Tahoe,Chevrolet,4,Robado,1,3,2,Estandar,0,Hibrido,2018-07-02
+89865,2012,V12 Vantage,Aston Martin,6,Robado,1,5,5,Estandar,1,Gasolina,2018-02-08
+89951,2002,Ram 1500,Dodge,6,Robado,1,3,3,Estandar,0,Hibrido,2018-04-24
+89955,2007,530,BMW,5,Robado,0,3,4,Estandar,1,Hibrido,2018-01-30
+90049,1996,Jimmy,GMC,4,Robado,0,3,3,Automatico,0,Hibrido,2018-09-21
+90340,2007,Ram 2500,Dodge,6,Verificacion,0,3,3,Automatico,0,Gasolina,2018-11-16
+90715,1990,B-Series,Mazda,6,Accidente,0,5,1,Estandar,1,Hibrido,2018-02-04
+92243,1995,Thunderbird,Ford,6,Verificacion,0,4,1,Automatico,0,Hibrido,2018-09-30
+92843,2011,Dakota,Ram,5,Robado,1,3,5,Estandar,1,Gasolina,2018-10-05
+93408,2010,Elise,Lotus,5,Robado,0,4,3,Automatico,1,Hibrido,2018-05-20
+93919,1967,Falcon,Ford,5,Daño al vehiculo,0,5,3,Estandar,1,Gasolina,2018-08-03
+94102,2008,Mountaineer,Mercury,4,Verificacion,1,4,5,Automatico,1,Gasolina,2018-08-10
+94490,1994,Diablo,Lamborghini,5,Accidente,1,3,2,Estandar,0,Gasolina,2018-03-31
+94655,2001,Prelude,Honda,5,Robado,0,4,1,Automatico,1,Hibrido,2018-03-08
+94901,1992,S4,Audi,5,Robado,0,5,5,Estandar,1,Hibrido,2018-03-23
+95083,1988,Riviera,Buick,6,Verificacion,0,5,2,Automatico,1,Hibrido,2018-07-20
+95245,2005,DeVille,Cadillac,6,Robado,0,5,4,Automatico,0,Gasolina,2017-12-20
+numero_economico,año,modelo,marca,cilindros,descripcion_baja,activo,num_puertas,num_pasajeros,transmicion,llanta_refaccion,combustible,fecha_baja
+96980,1990,Sable,Mercury,6,Robado,1,4,3,Automatico,1,Gasolina,2018-05-21
+97118,2003,SSR,Chevrolet,5,Robado,1,3,2,Estandar,1,Gasolina,2018-03-05
+97300,2004,Corvette,Chevrolet,4,Accidente,0,5,3,Automatico,1,Hibrido,2018-10-24
+97746,1999,Escalade,Cadillac,5,Robado,0,4,3,Automatico,1,Gasolina,2018-11-28
+97865,1994,Dakota,Dodge,5,Robado,0,5,3,Automatico,1,Gasolina,2018-12-03
+97919,1959,600,BMW,5,Robado,0,5,2,Estandar,0,Gasolina,2018-03-03
+97942,1992,Rodeo,Isuzu,5,Robado,0,5,2,Estandar,0,Gasolina,2018-05-14
+98029,2003,Pilot,Honda,4,Robado,0,4,2,Automatico,0,Gasolina,2018-04-30
+98597,2006,Mustang,Ford,5,Robado,1,3,1,Automatico,1,Hibrido,2018-04-26
+98957,1995,Caprice Classic,Chevrolet,4,Robado,1,5,1,Estandar,1,Hibrido,2018-02-10
+99665,1989,Laser,Ford,5,Daño al vehiculo,1,5,1,Estandar,1,Hibrido,2018-05-22
