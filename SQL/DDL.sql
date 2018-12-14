@@ -97,6 +97,7 @@ infracciones(
 num_infraccion INT NOT NULL,
 num_licencia INT NOT NULL,
 costo_original INT,
+fecha_infraccion DATE,
 )
 
 CREATE TABLE
@@ -292,11 +293,11 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
 --ORIGEN columna para conocer si la ubicacion esta en CU
-ALTER TABLE origen 
-DROP COLUMN en_cu;
+--ALTER TABLE origen 
+--DROP COLUMN en_cu;
 
 --DESTINO columna para conocer si la ubicacion esta en CU
-ALTER TABLE destino
-DROP COLUMN en_cu;
+--ALTER TABLE destino
+--DROP COLUMN en_cu;
 
 
