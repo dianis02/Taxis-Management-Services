@@ -36,9 +36,11 @@ INNER JOIN destino ON viaje.id_viaje = destino.id_viaje
 WHERE destino.colonia = 'CU' AND destino.calle = 'Facultad de Ingeniería'
 GROUP BY persona.nombre, rol.rol;
 
--- 5. El promedio de ganancias de los choferes en el semestre 2019-1
---    (Agosto 2018-Diciembre 2018)
---SELECT AVG()
+-- 5. El promedio de distancias recorridas en viajes realizados
+--    durante el semestre 2019-1 (Agosto 2018-Diciembre 2018)
+SELECT AVG(viaje.distancia) AS promedio_distancias
+FROM viaje
+WHERE YEAR(viaje.fecha) = 2018 AND MONTH(viaje.fecha) IN (08,09,10,11,12);
 
 -- 6. Nombre de los choferes que no son dueños.
 SELECT persona.nombre, persona.paterno, persona.materno
@@ -74,7 +76,7 @@ INNER JOIN destino ON viaje.id_viaje = destino.id_viaje
 WHERE destino.delegacion = 'Iztapalapa' AND (YEAR(viaje.fecha) = 2018 AND MONTH(viaje.fecha) = 01);
 
 -- 11. El número de infracciones por chofer.
-SELECT choferes.id_persona, COUNT(infracciones.num_infraccion)
+SELECT choferes.id_persona, COUNT(infracciones.num_infraccion) AS num_infracciones
 FROM choferes
 INNER JOIN infracciones ON choferes.num_licencia = infracciones.num_licencia
 GROUP BY choferes.id_persona;
@@ -92,7 +94,7 @@ WHERE destino.calle = 'Facultad de Medicina');
 -- 13. El viaje de mayor distancia recorrida con origen en la 
 --     delegación Tlahuac realizado por un carro de 4 puertas con
 --     destino a la delegación Xochimilco.
-SELECT MAX(viaje.distancia)
+SELECT MAX(viaje.distancia) AS distancia_max
 FROM viaje
 INNER JOIN destino ON viaje.id_viaje = destino.id_viaje
 INNER JOIN origen ON viaje.id_viaje = origen.id_viaje
